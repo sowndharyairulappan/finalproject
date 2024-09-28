@@ -1,0 +1,150 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Menu button for mobile view -->
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+
+    <!-- Header with fixed position -->
+    <div class="header">
+        <div class="navbar">
+            <a href="#home"><i class="fa-solid fa-house"></i>  Home</a>
+            <a href="#about"><i class="fa-solid fa-user"></i>  About</a>
+            <a href="#myresume"><i class="fa-solid fa-pen-nib"></i>  MyWorks</a>
+            <a href="#contact"><i class="fa-solid fa-phone"></i>  Contact</a>
+            
+        </div>
+        <div class="logo">
+            <a href="https://www.instagram.com/_sow_irulappan_226/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/sowndharyairulappan"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sowndharya-m-22896732b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Home section -->
+    <section class="content" id="home">
+        
+        <div class="swa">
+            <h1 class="statictext">hello! I'm <span>SOWNDHARYA</span></h1>
+            <p>This is my portfolio website to show all details and works.</p>
+        </div>
+        
+    </section>
+
+    <!-- About Section -->
+    <section class="content" id="about">
+        <div class="kmt">
+            <img src="myphoto.jpg" alt="Photo of Sowndharya" height="500px" width="100%">
+        </div>
+        <div class="page">
+            <h2>About Me</h2>
+            <p>
+                I am a creative and result-driven web developer specializing in front-end technologies. I love working on projects that bring ideas to life through innovative and user-friendly designs. I enjoying solving complex problem and Iam always eager to learn new technologies<br>
+                when I'm not coding, you can find me exploring design trends, reading tech blogs, or contributing to open-source projects
+            </p>
+                <div class="button-file">
+                    <a href="resume.pdf"> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="content" id="myresume">
+        <div class="work">
+            <h2 id="project-h2">My  Works</h2>
+            <div class="grid">
+                <div class="project-card">
+                    <img src="splash.png">
+                    <h3>
+                        Online Cake Shop
+                    </h3>
+                    <p>
+                        CAKE GALAXY” is an android-based application that can be accessed by customer, bakery admin and home bakers. This system provides the easiest way to sell and purchase the cakes. This system helps for the bakery admin, home bakers, customer to be in a single frame. This project also help customer to customize their own cakes. Every user of this app such as customer, bakery admin, home bakers can see their product details through online from anywhere and at any time. This system act as a communication path to purchase the cake from respective sellers.
+                     </p>
+                </div>
+
+                <div class="project-card">
+                    <img src="scene.jpg">
+                    <h3>
+                        Winnie-The-Pooh 
+                    </h3>
+                    <p>
+                        It was animated by using macromedia flash 8.This story is from the novel “WINNE THE POOH”chapter6 in which pooh finds Eeyore   gloomy because nobody remembers his birthday .so pooh and piglet decides to gift him something special and make Eeyore happy .
+                     </p>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section class="content" id="contact">
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>My Email</h3>
+                <p>sowndharya226@gmail.com</p>
+            </div>
+    
+            <div class="icons">
+                <i class="fa-solid fa-phone"></i>
+                <h3>My Number</h3>
+                <p>9361646994</p>
+            </div>
+    
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>My Address</h3>
+                <p>South New Street, Konar Complex, Thenkarai, Periyakulam, Theni.</p>
+            </div>
+        </div>
+    
+        <div class="row">
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" class="box" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" class="box" required>
+    
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" placeholder="Phone Number" class="box" pattern="[0-9]{10}" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Message" cols="30" rows="10" class="box" required></textarea>
+    
+                <input type="submit" class="button" value="Send Message">
+            </form>
+    
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.7602321965132!2d77.54226967407912!3d10.118701870982916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0769f1628101d1%3A0xc2ab4e371978b04a!2sS%20New%20St%2C%20Tamil%20Nadu%20625601!5e0!3m2!1sen!2sin!4v1727379542976!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+        <!-- Modal for success message -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Message sent successfully!</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
